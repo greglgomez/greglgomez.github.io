@@ -1,0 +1,35 @@
+---
+---
+
+<h2>wiki@greglgomez</h2>
+<p>this is a remix of Tom Critchlow's "personal digital garden". A place to grow and prune ideas.</p>
+
+{% assign folders = site.pages | where_exp:"item", "item.path contains 'wiki'" %}
+{% assign wikifolders = "" | split:"" %}
+
+{% for folder in folders %}
+  {% assign tempvar = folder.path | split:"/" %}
+  {% assign wikifolders = wikifolders | push:tempvar[1] %}
+{% endfor %}
+
+{% assign wikifolders = wikifolders | uniq | sort %}
+
+
+<div>
+{% for folder in wikifolders %}
+  {% unless folder contains 'md' or folder contains 'html' %}
+    <div>
+      <a href="/wiki/{{folder}}/"><div>{{folder | capitalize}}</div></a>
+    </div>
+  {% endunless %}
+{% endfor %}
+</div>
+
+<h3>All notes</h3>
+
+{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki'" | sort:"path" %}
+{% for item in folder1 %}
+<a href="{{ item.url }}">{{item.path}}</a>
+<br>
+{% endfor %}
+
