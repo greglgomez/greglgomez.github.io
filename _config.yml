@@ -5,6 +5,7 @@ baseurl: ""
 url: ""
 twitter_username: greglgomez
 github_username:  greglgomez
+exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Build settings
 markdown: kramdown
@@ -25,3 +26,10 @@ defaults:
       path: "/wiki/*"
     values:
       layout: "wiki"
+
+# Invite generation
+page_gen:
+  - data: 'guests'
+    template: 'invite'
+    name: 'guest'
+    dir: 'convites'
