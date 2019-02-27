@@ -1,8 +1,8 @@
 ---
+title: posts
 layout: page
-Title: posts
+permalink: /posts/
 ---
-
 
 List of posts:
 <ul>
