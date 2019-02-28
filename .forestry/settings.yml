@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: wiki
+  label: wiki
+  create: all
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
@@ -13,7 +18,7 @@ sections:
   match: "**/*"
 - type: directory
   path: _projects
-  label: Projects
+  label: projects
   create: all
   match: "**/*"
 upload_dir: uploads
