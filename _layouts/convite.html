@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{% if page.metatitle %}{{page.metatitle}}{% elsif page.title%}{{page.title}}{% else %}fall-back-title @greglgomez{% endif %}</title>
+        <title>{% if page.metatitle %}{{page.metatitle}}{% elsif page.title%}{{page.title}}{% else %}@greglgomez{% endif %}</title>
         <link rel="stylesheet" href="/assets/css/tachyons.css">
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="stylesheet" href="/assets/css/mobile.css">
@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="w-100 pa3 ph5-l bg-washed-red">
-        <div class="center w-100 w-70-ns w-80-l pa4 baskerville bg-washed-yellow shadow-5 near-black f4 lh-copy">
+        <div class="center w-100 w-80-m w-50-l pa4 baskerville bg-washed-yellow shadow-5 near-black f4 lh-copy">
         {{content}}
         </div>
     </body>
