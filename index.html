@@ -5,6 +5,40 @@ title: home
 {% include head.html %}
 {%- include header.html -%}
 
-
+<div class="code f6-s center mt5">
+    <p class="f2">
+        Hey! I'm Greg Gomez!
+    </p>
+    
+    <p class="f3">
+        I’m a project manager with skills & experience in <span class="orange">sales</span>, <span class="orange">design thinking</span> & <span class="orange">product management</span>.
+    </p>
+    
+    <p class="f7">
+        (I also love space and thinking about the future).
+    </p>
+    <hr class="mv5">
+    <p>
+        Have a wander around, below are some of my latest posts and wiki entries.
+    </p>
+    <div id="home-feed" class="flex-ns justify-between">
+        <div>
+            <h3 class="w-50">posts</h3>
+            <ul>
+                {%- for post in site.posts -%}
+                    <li><a href="{{post.url}}">{{post.title}}</a></li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        <div class="w-50">
+            <h3>wiki</h3>
+            {% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki'" | sort:"path" %}
+            {% for item in folder1 %}
+            <a href="{{ item.url }}">{{item.path}}</a>
+            <br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
 {% include footer.html %}
