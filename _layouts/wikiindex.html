@@ -14,7 +14,7 @@
 
 <p>{{content}}</p>
 
-<div>
+<div class="fl w-60-l w-100 min-h5">
 {% assign notes = site.pages | where_exp: "item" , "item.path contains folderfilter" | sort:"pinned" | reverse %}
 
 <h3>Notes:</h3>
@@ -22,9 +22,9 @@
 {% if page.expand %}
 {% for item in notes %}
     {% unless item.path contains "index.html" %}
-    <div>
+    <div class="pb4 pr2-l">
         <hr>
-    <a href="{{item.url}}"># {{item.path | replace: folderfilter , ""}}</a></li>
+    <a class="link gray f5" href="{{item.url}}"># {{item.path | replace: folderfilter , ""}}</a></li>
     {{item.content | markdownify}}    
     </div>
     {% endunless %}
@@ -33,14 +33,14 @@
 <ul>
 {% for item in notes %}
     {% unless item.path contains "index.html" %}
-        <li>{%if item.pinned %}📌{% endif %} <a href="{{item.url}}">{{item.path | replace: folderfilter , ""}}</a></li>
+        <li class="pv1">{%if item.pinned %}📌{% endif %} <a href="{{item.url}}">{{item.path | replace: folderfilter , ""}}</a></li>
     {% endunless %}
 {% endfor %}
 </ul>
 {% endif %}
 </div>
 
-<div>
+<div class="fl w-40-l w-100 min-h5">
 
 {% assign i = 0 %}
 {% for image in site.static_files %}
@@ -48,10 +48,10 @@
         {% if image.path contains "pdf" or image.path contains "txt" %}
             {% assign i = i | plus:1 %}
             {% if i == 1 %}
-            <div></div>
+            <div class="w-100 cb"></div>
             <h3>Files:</h3>    
             {% endif %}
-            <a href="{{image.path}}" target="_blank"><div>{{image.path}}</div></a>
+            <a href="{{image.path}}" target="_blank"><div class="f6 grey">{{image.path}}</div></a>
         {% endif %}
     {% endif %}
 {% endfor %}
@@ -62,12 +62,12 @@
         {% if image.path contains "jpg" or image.path contains "jpeg" or image.path contains "png" %}    
             {% assign j = j | plus:1 %}
             {% if j == 1 %}
-            <div></div>
+            <div class="w-100 cb"></div>
             <h3>Images:</h3>    
             {% endif %}
-            <div>
+            <div class="fl w-50 pa2">
                 <a href="{{image.path}}" target="_blank"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></a>
-                <div>{{image.path | replace: folderfilter , ""}}</div>
+                <div class="f6 grey">{{image.path | replace: folderfilter , ""}}</div>
             </div>        
         {% endif %}
     {% endif %}
