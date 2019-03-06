@@ -1,5 +1,21 @@
 
 
+.bg-wedding {
+    background-image: url();
+}
+
+.bad-script{
+font-family: 'Bad Script', cursive;
+}
+.charm {
+font-family: 'Charm', cursive;
+}
+.merriweather {
+font-family: 'Merriweather', serif;
+font-weight: 200;
+font-size: 0.9em;
+}
+
 
 /* fix the footer at the bottom of the page */
 body {
