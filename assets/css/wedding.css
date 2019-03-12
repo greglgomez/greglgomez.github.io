@@ -1,0 +1,69 @@
+/* fonts */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  }  
+.charm {
+    font-family: 'Charm', cursive;
+}
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+/* wedding index.html styles */
+#top {
+    background-image: url(/assets/imgs/casamento/DSC05430.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 23% 0%;
+}
+  
+/* responsive tweaks */
+@media screen and (min-width: 30em) {
+
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+
+}
+@media screen and (min-width: 60em) {
+    #top {
+        background-position: 0% 60%;
+    }
+}
+
+/* css arrows */
+i {
+    border: solid  white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+} 
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* styles for _includes/gmap.html to make the iframe responsive */
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* 4x3 aspect ratio */
+.iframe-container {
+    padding-top: 75%;
+}
