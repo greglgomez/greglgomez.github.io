@@ -1,35 +1,47 @@
-
-<div class="ph4 ph5-ns pt4 pb3">
-    <h2>Convite</h2>
-    <p>
-        Convidamos você para comparecer ao nosso pequeno e humilde casório!
-    </p>
-    <p>
-        Sabemos que é meio de ultima hora, mas dado que estamos indo para Inglaterra logo, queriamos fazer antes de ir para celebrar com vocês todos!
-    </p>
-</div>
-
-<div id="ex1" class="modal merriweather">
-    {%- include casamento/presentes.html -%}
-</div>
-
-<div class="flex flex-wrap align-content center">
-    <div class="w-100 w-40-l ph4 center">
-        <h3 class="">Quando?</h3>
-        <p class="">
-            <b>Sábado, 06 de Abril 2019 às 15:00h.</b> <br>
-            Sim, sabemos que é logo, desculpa! Mas a gente quer se mandar logo pra Inglaterra e queriamos comemorar com vocês antes de ir. :)
+<div class="w-90 w-80-m w-60-l center">
+    <div class="">
+        <h2>Convite</h2>
+        <p>
+            Convidamos você para comparecer ao nosso pequeno e humilde casório!
         </p>
-        <h3 class="mt5-ns">Traje</h3>
-        <p>Pelo Amor de Deus, não me apareça de terno ou de salto, é um casamento na praia, gostariamos de ver vocês todos de traje colorido e casual. Ah, e pé descalço. :)</p>
-        <h3 class="mt5-ns">Presentes</h3>
-        <p>Se você está desesperadamente querendo saber se queremos algo, <a href="#ex1" rel="modal:open">clique aqui</a>.</p>
+        <p>
+            Sabemos que é meio de ultima hora, mas dado que estamos indo para Inglaterra logo, queriamos fazer antes de ir para celebrar com vocês todos!
+        </p>
     </div>
-    <div class="w-100 w-50-l ph3 ph5-l">
-        <h3 class="">Onde?</h3>
-        {%- include gmap.html -%}
+
+    <div class="flex flex-wrap flex-row w-100 justify-center ">
+        <div class="w-100 w-50-l ph2">
+            <h3>O que?</h3>
+            <p>Uma pequena cerimônia na Ponta do Sambaqui e depois uma celebração em um restaurante próximo. Cada um paga o seu, mas pode deixar que vai ter um champagne para brindarmos para a nossa longa e feliz união. ;)</p>
+        </div>
+
+        <div class="w-100 w-50-l ph2">
+            <h3>Quando?</h3>
+            <p>Sábado, 06 de Abril 2019 às 15:00h.</p>
+            <p>Sim, sabemos que é logo, desculpa! Mas a gente quer se mandar logo pra Inglaterra e queriamos comemorar com vocês antes de ir. :)</p>
+        </div>
+
+        <div class="w-100 w-50-l ph2">
+            <h3>Traje</h3>
+            <p>Pelo Amor de Deus, não me apareça de terno ou de salto, é um casamento na praia, gostariamos de ver vocês todos de traje colorido e casual. Ah, e pé descalço. :)</p>
+        </div>
+
+        <div class="w-100 w-50-l ph2">
+            <h3>Presentes</h3>
+            <p>Se você está desesperadamente querendo saber se queremos algo, <a href="#ex1" rel="modal:open">clique aqui</a>.</p>
+        </div>
+
+        <div class="w-100 w-50-l ph2">
+            <h3>Onde?</h3>
+            {%- include gmap.html -%}
+        </div>
+
+        <div class="w-100 w-50-l ph2">
+            {%- include casamento/confirme.html -%}
+        </div>
     </div>
-    <div class="w-90 w-60-ns center pt5">
-        {%- include casamento/confirme.html -%}
+
+    <div id="ex1" class="modal merriweather">
+            {%- include casamento/presentes.html -%}
     </div>
 </div>
