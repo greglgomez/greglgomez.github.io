@@ -1,5 +1,5 @@
 <h3>Confirme sua presença</h3>
-<form name="confirme" method="POST" id="rvsp" data-netlify="true">
+<form name="confirme" action="/casamento/sucesso.html" method="POST" id="rvsp" data-netlify="true">
     <p>
         <label>Nome 
             <input type="text" name="name" class="w-100"/>
@@ -7,7 +7,7 @@
     </p>
     <p>Quem vem com você? <button class="mt2 f6 link dim ba ph3 pv1 mb2 dib near-black" type="button" onclick="addGuest()">Adicionar Convidado</button>
     </p>
-    <p>
-        <button type="submit" class="f6 link dim ph3 pv2 mb2 dib white bg-dark-green">Enviar</button>
-    </p>    
 </form>
+<p>
+    <button type="submit" form="rvsp" class="f6 link dim ph3 pv2 mb2 dib white bg-dark-green">Enviar</button>
+</p>
