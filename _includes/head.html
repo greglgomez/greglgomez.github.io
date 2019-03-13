@@ -5,6 +5,7 @@
 
     <title>{% if page.metatitle %}{{page.metatitle}}{% elsif page.title%}{{page.title}}@greglgomez{% else %}@greglgomez{% endif %}</title>
     
+    {%- include analytics.html -%}
     
     <link rel="stylesheet" href="/assets/css/tachyons.css">
 
@@ -15,7 +16,7 @@
     
     <script src="/assets/js/main.js"></script>
 
-{%- include analytics.html -%}
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

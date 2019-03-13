@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         
         <title>{% if page.metatitle %}{{page.metatitle}}{% elsif page.title%}{{page.title}}{% else %}@greglgomez{% endif %}</title>
+
+        {%- include analytics.html -%}
         
         <link href="https://fonts.googleapis.com/css?family=Bad+Script|Charm|Merriweather:300,400,700" rel="stylesheet"> 
         
