@@ -20,19 +20,11 @@
 }
 
 /* wedding sucesso.html styles */
-#cover-vid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background: url('/assets/imgs/casamento/poster.jpg') no-repeat;
+#cover {
+    background-image: url(/assets/imgs/casamento/IMG_0015.jpeg);
     background-size: cover;
-    transition: 1s opacity;
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
 }
 
 /* responsive tweaks */
