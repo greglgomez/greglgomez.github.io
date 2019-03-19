@@ -9,23 +9,19 @@ lang: pt
       <h1 class="tc charm ma0 f-5-ns fw1">Casamento Gabi & Greg</h1>
       <p class="f4-ns ph5">Vamos nos casar e queremos você lá!</p>
     </div>
-    <a href="#convite" class="w-20 w-10-ns grow white link center bg-black-60 pb3">
-        <p class="ph3">
-        </p>
-        <i class="arrow down"></i></a>
-        
-    {%- comment -%} <a href="#historia" class="w-100 w-40-ns grow white link center bg-black-60 pb3">
-        <p class="ph3">
-          Mas primeiro um pouco da nossa história...
-        </p>
-        <i class="arrow down"></i></a> {%- endcomment -%}
+    
+    <a href="#historia" class="w-100 w-20-ns grow white link center bg-black-60 pb3">
+        <p class="ph3">Mas primeiro um pouco da nossa história...</p>
+        <i class="arrow down"></i>
+    </a>
   </section>
 
-  {%- comment -%} <section id="historia" class="vh-100 flex flex-column justify-between">
+  <section id="historia" class="vh-100 flex flex-column justify-between">
     {%- include casamento/story.html -%}
-  </section> {%- endcomment -%}
+    <a href="#convite" class="dim pb3 bg-black"><i class="arrow down"></i></a>
+  </section>
 
-  <section id="convite" class="vh-100 pt4">
+  <section id="convite" class="pt4 mb5">
     <div class="self-stretch ">
       {%- include casamento/convite.html -%}
     </div>

@@ -3,7 +3,18 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-shadow: rgba(0,0,0,.01) 0 0 1px;
-  }  
+  }
+
+  /* declare merriweather and charm */
+@font-face {
+    font-family: 'Charm';
+    src: url('/assets/fonts/Charm-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/assets/fonts/Merriweather-Regular.woff') format('woff');
+}
+
 .charm {
     font-family: 'Charm', cursive;
 }

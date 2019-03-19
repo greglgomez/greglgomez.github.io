@@ -2,30 +2,46 @@
 
     <!-- Blue Intro Text -->
     <p class="intro-text">
-        In a galaxy far, far away...
+        {%- if page.lang == "en" -%}
+            A long time ago in an island far,<br>
+            far away....
+        {%- elsif page.lang == "pt" -%}
+            Há muito tempo em uma ilha muito,<br>
+            muito distante....
+        {%- endif -%}
     </p>
     
     <!-- Logo Image or Text goes in here -->
     <h2 class="main-logo">
-        <img src="img/star-wars-intro.png">
+        <img src="/assets/imgs/casamento/sw_logo.png">
     </h2>
     
     <!-- All Scrolling Content Goes in here -->
     <div class="main-content">
     
         <div class="title-content">
-        <p class="content-header">Greg e Gabi<br/>Episódio II</p>
+        <p class="content-header">
+            {%- if page.lang == "en" -%}
+                Return of the one that got away<br/>Episode I
+            {%- elsif page.lang == "pt" -%}
+                Returno daquela que escapou<br/>Episódio I
+            {%- endif -%}
+        </p>
     
         <br>
     
         <p class="content-body">
-            After years of galactic silence, civilization is on the brink of a new Star Wars release. Now, with the Force preparing to awaken, the people of Earth seek solace in films of old. With nowhere to turn, they gather in great numbers and watch the original trilogy without rest. Three films. 6 hours. 24 minutes. Popcorn. Slushies. Total elation.
+            {%- if page.lang == "en" -%}
+                It was in high school where they first met, back then she didn't much care for him, but he kept after her anyway, waiting outside her classroom at break, but alas, it wasn't meant to be. He moved country and many years passed without them talking, until he came back to visit and she was the one running after now. They met again and it was like no time at all had passed. So was their love rekindled and this story started.
+            {%- elsif page.lang == "pt" -%}
+                Eles primeiro se encontraram no colégio, naquela época ela não dava muita bola pra ele, mas ele continuou atrás, esperando por ela na porta da sala no recreio, mas não era pra ser. Ele foi pra outro país e muitos anos se passaram sem eles se falarem, até que ele voltou para visitar e agora era ela que estava correndo atrás. Eles se encontraram de novo e foi como se tempo nenhum tivesse passado. Foi assim então que o amor deles reacendeu e essa história começou.
+            {%- endif -%}
+            
         </p>
     
         <!-- button or link or whatever -->
-        <a href="./StarScroll.zip" class="space-button">Download The Code Now!</a>
+        <a href="#convite" class="space-button">To the invite!</a>
             
         </div>
     </div>
 </div>
-<a href="#convite" class="dim pb3 bg-black"><i class="arrow down"></i></a>
