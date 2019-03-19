@@ -1,6 +1,6 @@
 {%- if page.lang == "en" -%}
-    <h3>Confirm your presence</h3>
-    <form name="confirme" action="/wedding/en/success.html" method="POST" id="rvsp" data-netlify="true">
+    <h3>Confirm your presence</h3> 
+    <form name="confirme" action="{% link wedding/en/success.html %}" method="POST" id="rvsp" data-netlify="true">
         <p>
             <label>Name 
                 <input type="text" name="name" class="w-100"/>
@@ -43,7 +43,7 @@
     </p>
 {%- elsif page.lang == "pt" -%}
     <h3>Confirme sua presença</h3>
-    <form name="confirme" action="/wedding/pt/sucesso.html" method="POST" id="rvsp" data-netlify="true">
+    <form name="confirme" action="{% link wedding/pt/sucesso.html %}" method="POST" id="rvsp" data-netlify="true">
         <p>
             <label>Nome 
                 <input type="text" name="name" class="w-100"/>
