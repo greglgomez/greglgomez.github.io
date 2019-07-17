@@ -1,6 +1,5 @@
 ---
 title: sandbox
-published: false
 
 ---
 place for experiments and fooling around.
