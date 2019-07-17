@@ -29,4 +29,5 @@ fields:
     required: false
   label: permalink
 pages:
+- sandbox/fyp/fyp.html
 - sandbox/index.html
