@@ -15,7 +15,7 @@ sections:
 - type: jekyll-pages
   label: pages
   create: all
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: directory
   path: _projects
   label: projects
