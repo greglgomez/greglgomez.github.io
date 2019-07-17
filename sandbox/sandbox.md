@@ -1,5 +1,5 @@
 ---
-title: sandbox
+title: sandbox.html
 
 ---
 place for experiments and fooling around.
