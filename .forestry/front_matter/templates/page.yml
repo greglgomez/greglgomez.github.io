@@ -7,5 +7,24 @@ fields:
   config:
     required: false
   label: title
-pages:
-- sandbox/sandbox.html
+- name: layout
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - page
+    - " post"
+    - wiki
+    - wikiindex
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: layout
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
