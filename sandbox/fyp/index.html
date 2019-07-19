@@ -10,12 +10,14 @@ title: fyp
   <p>I’m not a recruiter, nor am I getting paid in anyway for this, it’s a tool I created out of my own desire to find work with purpose. Feel free to tip me if you found it useful.</p>
   
   <div data-stein-url="https://api.steinhq.com/v1/storages/5d2eed4b490adc53ef5c2cd9/Sheet1">
+    {% raw %}
     <h2 v-pre>{{role}}</h2>
     <h6 v-pre>with {{employer}}</h6>
     <p v-pre>
       {{description}}
     </p>
     <p>Read more <a href="{{link}}" v-pre>here</a></p>
+    {% endraw %}
   </div>
 </div>
 
