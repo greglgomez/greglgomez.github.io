@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>{% if page.metatitle %}{{page.metatitle}}{% elsif page.title%}{{page.title}}{% else %}@greglgomez{% endif %}</title>
+
+        {%- include analytics.html -%}
+        
+        <link rel="stylesheet" href="/assets/css/tachyons.css">
+        
+        <script src="/assets/js/jquery-3.3.1.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="w-100">
