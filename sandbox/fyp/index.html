@@ -1,8 +1,25 @@
 ---
 title: fyp
-layout: page
 ---
 
-test 123
+{%- include header.html -%}
 
-lalalala
+<div class="center w-100 merriweather tc fw1">
+  <div
+    data-stein-url="https://api.steinhq.com/v1/storages/5cc158079ec99a2f484dcb40/Sheet1"
+    data-stein-limit="2"
+  >
+  <div>
+    <h1>{{role}}</h1>
+    <h6>with {{employer}}</h6>
+    <p>
+      {{description}}
+    </p>
+    <p>Read more <a href="{{link}}">here</a></p>
+  </div>
+</div>
+
+</div>
+
+{%- include stein.html -%}
+{%- include footer.html -%}
